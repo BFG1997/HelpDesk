@@ -1,19 +1,21 @@
 <Solution>
   <Folder Name="/src/" />
   <Folder Name="/src/backend/">
-    <Project Path="../HelpDesk.Application/HelpDesk.Application.csproj" />
-    <Project Path="../HelpDesk.Domain/HelpDesk.Domain.csproj" />
-    <Project Path="../HelpDesk.Infrastructure/HelpDesk.Infrastructure.csproj" />
-    <Project Path="HelpDesk.Api/HelpDesk.Api.csproj" />
+    <Project Path="src/backend/HelpDesk.Api/HelpDesk.Api.csproj" />
+    <Project Path="src/backend/HelpDesk.Application/HelpDesk.Application.csproj" />
+    <Project Path="src/backend/HelpDesk.Domain/HelpDesk.Domain.csproj" />
+    <Project Path="src/backend/HelpDesk.Infrastructure/HelpDesk.Infrastructure.csproj" />
   </Folder>
   <Folder Name="/src/frontend/">
-    <Project Path="../../frontend/HelpDesk.App/HelpDesk.App.esproj">
+    <Project Path="src/frontend/HelpDesk.App/HelpDesk.App.esproj">
       <Build />
       <Deploy />
     </Project>
   </Folder>
-  <Folder Name="/src/shared/" />
+  <Folder Name="/src/shared/">
+    <Project Path="src/shared/HelpDesk.Shared/HelpDesk.Shared.csproj" Id="4cd75be8-6741-4ca5-b6a5-f82224f3af39" />
+  </Folder>
   <Folder Name="/tests/">
-    <Project Path="../../../tests/HelpDesk.Tests/HelpDesk.Tests.csproj" />
+    <Project Path="tests/HelpDesk.Tests/HelpDesk.Tests.csproj" />
   </Folder>
 </Solution>
