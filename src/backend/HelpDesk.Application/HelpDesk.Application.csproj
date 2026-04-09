@@ -6,4 +6,19 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Attachments\Commands\" />
+    <Folder Include="Features\Attachments\Queries\" />
+    <Folder Include="Features\Categories\Commands\" />
+    <Folder Include="Features\Categories\Queries\" />
+    <Folder Include="Features\Notifications\Queries\" />
+    <Folder Include="Features\Notifications\Commands\" />
+    <Folder Include="Features\Tickets\Queries\" />
+    <Folder Include="Features\Tickets\Commands\" />
+    <Folder Include="Features\Tickets\DTOs\" />
+    <Folder Include="Features\Tickets\Validators\" />
+    <Folder Include="Features\Users\Commands\" />
+    <Folder Include="Features\Users\Queries\" />
+  </ItemGroup>
+
 </Project>
