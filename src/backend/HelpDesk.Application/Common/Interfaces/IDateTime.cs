@@ -4,7 +4,8 @@ using System.Text;
 
 namespace HelpDesk.Application.Common.Interfaces
 {
-    internal interface IDateTime
+    public interface IDateTime
     {
+        DateTime UtcNow { get; }
     }
 }

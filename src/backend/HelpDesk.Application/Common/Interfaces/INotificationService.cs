@@ -4,7 +4,8 @@ using System.Text;
 
 namespace HelpDesk.Application.Common.Interfaces
 {
-    internal interface INotificationService
+    public interface INotificationService
     {
+        Task SendAsync(Guid userId, string message, CancellationToken cancellationToken);
     }
 }

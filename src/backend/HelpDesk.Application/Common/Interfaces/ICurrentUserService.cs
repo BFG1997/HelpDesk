@@ -1,10 +1,15 @@
-﻿using System;
+﻿using HelpDesk.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace HelpDesk.Application.Common.Interfaces
 {
-    internal interface ICurrentUserService
+    public interface ICurrentUserService
     {
+        Guid UserId { get; }
+        string Email { get; }
+        UserRole Role { get; }
+        bool IsAuthenticated { get; }
     }
 }
