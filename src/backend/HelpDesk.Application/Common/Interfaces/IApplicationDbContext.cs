@@ -19,7 +19,7 @@ namespace HelpDesk.Application.Common.Interfaces
         DbSet<AuditLog> AuditLogs { get; }
 
         // Если будет таблица уведомлений (рекомендуется для варианта A)
-        DbSet<Notification> Notifications { get; }
+        //DbSet<Notification> Notifications { get; }
 
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }
