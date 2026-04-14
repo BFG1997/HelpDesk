@@ -5,8 +5,10 @@ public class Attachment
     public Guid Id { get; set; }
 
     public Guid TicketId { get; set; }
+    public Ticket Ticket { get; set; } = null!;
 
     public Guid UploadedByUserId { get; set; }
+    public User UploadedByUser { get; set; } = null!;
 
     public string FileName { get; set; } = string.Empty;
 

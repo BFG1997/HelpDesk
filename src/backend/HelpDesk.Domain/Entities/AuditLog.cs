@@ -11,6 +11,7 @@ public class AuditLog
     public string Action { get; set; } = string.Empty;
 
     public Guid WhoUserId { get; set; }
+    public User WhoUser { get; set; } = null!;
 
     public DateTime At { get; set; }
 
