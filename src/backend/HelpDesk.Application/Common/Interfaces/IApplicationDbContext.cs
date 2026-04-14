@@ -17,9 +17,7 @@ namespace HelpDesk.Application.Common.Interfaces
         DbSet<Domain.Entities.Attachment> Attachments { get; }
         DbSet<Category> Categories { get; }
         DbSet<AuditLog> AuditLogs { get; }
-
-        // Если будет таблица уведомлений (рекомендуется для варианта A)
-        //DbSet<Notification> Notifications { get; }
+        DbSet<Notification> Notifications { get; }
 
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }
