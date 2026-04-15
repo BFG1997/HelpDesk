@@ -6,12 +6,12 @@ public class AuditLog
 
     public string EntityType { get; set; } = string.Empty;
 
-    public string EntityId { get; set; } = string.Empty;
+    public Guid EntityId { get; set; }
 
     public string Action { get; set; } = string.Empty;
 
-    public Guid WhoUserId { get; set; }
-    public User WhoUser { get; set; } = null!;
+    public Guid? WhoUserId { get; set; }
+    public User? WhoUser { get; set; } 
 
     public DateTime At { get; set; }
 
