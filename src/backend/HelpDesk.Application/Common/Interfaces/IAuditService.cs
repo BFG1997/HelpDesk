@@ -11,6 +11,6 @@ namespace HelpDesk.Application.Common.Interfaces
         /// <param name="action">Действие: Created, Updated, Deleted, StatusChanged и т.п.</param>
         /// <param name="whoUserId">Id пользователя, совершившего действие</param>
         /// <param name="details">Дополнительные данные в виде объекта (будут сериализованы в JSON)</param>
-        Task LogAsync(string entityType, Guid entityId, string action, Guid? whoUserId, object? details = null);
+        Task LogAsync(string entityType, Guid entityId, string action, Guid? whoUserId, object? details = null, CancellationToken cancellationToken = default);
     }
 }
