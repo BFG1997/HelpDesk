@@ -9,7 +9,7 @@ using System.Text;
 
 namespace HelpDesk.Application.Common.Interfaces
 {
-    public interface IApplicationDbContext
+    public interface IApplicationDbContext : IUnitOfWork
     {
         DbSet<User> Users { get; }
         DbSet<Ticket> Tickets { get; }
@@ -18,7 +18,5 @@ namespace HelpDesk.Application.Common.Interfaces
         DbSet<Category> Categories { get; }
         DbSet<AuditLog> AuditLogs { get; }
         DbSet<Notification> Notifications { get; }
-
-        Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }
 }
